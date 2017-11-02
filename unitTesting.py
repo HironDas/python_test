@@ -6,13 +6,16 @@ class Stack:
 
     def push(self, item):
         self.stack.append(item)
+        
     def pop(self):
         if not self.stack:
             raise indexError("Cannot pop from empty stack")
         return self.stack.pop()
+    
     def peak(self):
         return self.stack[-1]
-    def in_empty(self):
+    
+    def is_empty(self):
         if len(self.stack) > 0:
             return False
         return True 
