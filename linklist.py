@@ -1,7 +1,7 @@
 class Node:
     '''Class representing one node in a linked list'''
     def __init__(self, data):
-        self.data = Node(data)
+        self.data = data
         self.next = None
 
 class LinkedList:
@@ -13,4 +13,3 @@ class LinkedList:
         previous_head = self.head
         self.head = Node(data)
         self.head.next = previous_head
-        
